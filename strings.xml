@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Tiff Screen Assistant</string>
+    <string name="accessibility_service_description">Allows Tiff to drive the Telegram app and execute approved taps, scrolls, and text entry one step at a time with instant STOP override.</string>
+</resources>

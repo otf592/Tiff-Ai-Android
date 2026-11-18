@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F1115"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TIFF // PERSONAL AI COMPANION v5"
+            android:textColor="#EC4899"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Eyes, Hands, Voice, Soul &amp; Telegram"
+            android:textColor="#F3F4F6"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Personal Telegram App Auto-Driver, Two-Way Bot Bridge, Soul, Female Voices &amp; Persistent Memory."
+            android:textColor="#9CA3AF"
+            android:textSize="13sp" />
+
+        <!-- Tiff Core Modules Row 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnOpenSoul"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:backgroundTint="#DB2777"
+                android:text="Tiff's Soul"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnOpenMemory"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#0D9488"
+                android:text="Memory Bank"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Tiff Core Modules Row 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnOpenTelegram"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:backgroundTint="#0284C7"
+                android:text="Telegram Hub"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnOpenMacros"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#2563EB"
+                android:text="Voice Macros"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Female Voice Studio Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#1A1D24"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Tiff's Female Voice Studio"
+                android:textColor="#F3F4F6"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Voice Engine"
+                android:textColor="#9CA3AF"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/spinnerVoiceEngine"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="4dp"
+                android:background="#262A34"
+                android:paddingHorizontal="12dp" />
+
+            <LinearLayout
+                android:id="@+id/layoutLocalVoicePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Select Female Android Voice"
+                    android:textColor="#9CA3AF"
+                    android:textSize="12sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerFemaleVoices"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#262A34"
+                    android:paddingHorizontal="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutGeminiTtsPrompt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Gemini 3.8 Neural Female Voice Style"
+                    android:textColor="#9CA3AF"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/etGeminiVoiceStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#262A34"
+                    android:hint="Warm, articulate young woman with a friendly tone"
+                    android:inputType="text"
+                    android:paddingHorizontal="12dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#6B7280"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnPreviewVoice"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="#374151"
+                android:text="Preview Tiff's Voice"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <!-- AI Provider Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#1A1D24"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. AI Vision &amp; Brain Provider"
+                android:textColor="#F3F4F6"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Select Backend"
+                android:textColor="#9CA3AF"
+                android:textSize="12sp" />
+
+            <Spinner
+                android:id="@+id/spinnerProvider"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="4dp"
+                android:background="#262A34"
+                android:paddingHorizontal="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="API Key (Used for Vision + optional Gemini TTS)"
+                android:textColor="#9CA3AF"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/etApiKey"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="4dp"
+                android:background="#262A34"
+                android:hint="Paste Gemini, Anthropic, or Custom API Key"
+                android:inputType="textPassword"
+                android:paddingHorizontal="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#6B7280"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Model ID"
+                android:textColor="#9CA3AF"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/etModelId"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="4dp"
+                android:background="#262A34"
+                android:hint="e.g. gemini-3.8-flash or claude-sonnet-5-5"
+                android:inputType="text"
+                android:paddingHorizontal="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#6B7280"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/layoutCustomEndpoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="Custom OpenAI-Compatible Endpoint URL"
+                    android:textColor="#9CA3AF"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/etCustomEndpoint"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#262A34"
+                    android:hint="https://api.openai.com/v1/chat/completions"
+                    android:inputType="textUri"
+                    android:paddingHorizontal="12dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#6B7280"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSaveConfig"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="14dp"
+                android:backgroundTint="#2E9E6B"
+                android:text="Save All Settings"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Permissions Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#1A1D24"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Required System Switches"
+                android:textColor="#F3F4F6"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnOverlayPerm"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#2D3340"
+                android:text="Grant Floating Overlay (Live Arrow)"
+                android:textColor="#F3F4F6" />
+
+            <Button
+                android:id="@+id/btnAccessibilityPerm"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#2D3340"
+                android:text="Enable Accessibility (Telegram Auto-Driver)"
+                android:textColor="#F3F4F6" />
+
+            <Button
+                android:id="@+id/btnMicPerm"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#2D3340"
+                android:text="Grant Microphone (Voice Commands)"
+                android:textColor="#F3F4F6" />
+
+            <Button
+                android:id="@+id/btnCallPerm"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#2D3340"
+                android:text="Grant Phone Permission (Direct Call)"
+                android:textColor="#F3F4F6" />
+        </LinearLayout>
+
+        <!-- Launch Button -->
+        <Button
+            android:id="@+id/btnLaunchTiff"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#EC4899"
+            android:text="WAKE UP TIFF OVERLAY"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Status: Ready"
+            android:textColor="#9CA3AF"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+</ScrollView>
